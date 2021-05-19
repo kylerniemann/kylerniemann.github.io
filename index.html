@@ -1,70 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
 <style>
-.h2 {
-	font-size: 40px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.h3 {
-	font-size: 40px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.p1 {
-	font-size: 40px;
-	font-family: Arial, Helvetica, sans-serif;
+    body {
+        background-image: url("../home.png");
+            background-position: center;
+            background-repeat: no-repeat,;
+            background-attachment: fixed;
+            background-size: cover;
+    }
+body {margin:0;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 700;
+    }
+    
+    
+
+.navbar {
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+     width: 100%;
+    left:43%;
+    top: 2%;
 }
 
-body {
-  margin: 0;
-	background-color: black;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  width: 1%;
-  padding: 1px;
-  height: 100%;
-  padding-top: 30%;
-  position: fixed;
-}
-
-li a {
+.navbar a {
+  float: left;
   display: block;
-  color: #000;
-  padding: 8px 16px;
+  color: #413A3B;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+.navbar a:hover {
   color: white;
 }
 
-li a.active {
-  background-color: #E31D38;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
 }
-
-li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-}
+    
 </style>
 </head>
 <body>
-<p1 style="color:white;">Test</p1>
-	
-<ul>
-  <li><a class="active" href="#project">|</a></li>
-  <li><a href="#purpose">|</a></li>
-  <li><a href="#documentation">|</a></li>
-  <li><a href="#tooling">|</a></li>
-  <li><a href="#pocs">|</a></li>
-</ul>
 
-<div style="margin-left:6%;padding:1px 16px;height:1000px;">
-  </div>
-	
-</body>
-</html>
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#projectA">Project A</a>
+  <a href="#projectB">Project B</a>
+  <a href="#projectC">Project C</a>
+</div>
